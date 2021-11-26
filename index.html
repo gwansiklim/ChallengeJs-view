@@ -5,11 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My WebSite</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <h2 id="clock"></h2>
+
+    <form id="login-form" class="hidden">
+        <input type="text" maxlength="15" requireds placeholder="ID를 적어주세요!">
+        <input type="submit" value="Log In">
+    </form>
+
+    <h1 id="login-id" class="hidden"></h1>
+
+    <form id="todo-form">
+
+        <input class="todo-input" type="text" placeholder="메모를 작성해 주세요." required>
+    </form>
+
+    <ul id="todo-list"></ul>
+
     <script src="./js/clock.js"></script>
     <script src="./js/login.js"></script>
     <script src="./js/todolist.js"></script>
